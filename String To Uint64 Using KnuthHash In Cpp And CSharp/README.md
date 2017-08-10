@@ -10,12 +10,7 @@
 
   ( 특정 파일경로를 로컬DB에 PK로 사용하는데 
   성능이슈가 염려되 PK를 문자열이 아닌 정수(해시값)를 사용하기 위해서)
-
-
-  아쉽게도 C++의 std::hash<std::string>()과 C#의 string.GetHashCode()의 반환값이 같지 않았습니다.
-
-  C++과 C#에서 Knuth Hash를 사용
-
+  
 
 cpp
 <pre><code>
